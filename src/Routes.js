@@ -1,15 +1,17 @@
-import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import Landing from "./pages/Landing";
+import Gallery from "./pages/Gallery";
+import Album from "./pages/Album";
 
 const Routes = () => (
   <div>
     <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/about' component={About} />
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/Artist/:artist" component={Gallery} />
+      <Route exact path="/album/:artist/:album" component={Album} />
     </Switch>
   </div>
-)
+);
 
-export default Routes
+export default Routes;

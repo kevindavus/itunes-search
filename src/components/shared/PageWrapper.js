@@ -1,8 +1,11 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin-top: 150px;
-  text-align: center;
-`
+  max-width: 1200px; /* 20px smaller, to fit the paddings on the sides */
 
-export default Wrapper
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0 auto;
+`;
+
+export default Wrapper;
