@@ -5,14 +5,14 @@ import { darken } from "polished";
 import { Link } from "react-router-dom";
 
 const Button = styled(Link)`
-  border: none;
   background-color: rgb(239, 93, 48);
+  border-radius: 3px;
+  border: none;
   color: #fff;
-  padding: 10px 30px;
+  cursor: pointer;
   margin: 0 auto;
   outline: none;
-  cursor: pointer;
-  border-radius: 3px;
+  padding: 10px 30px;
   text-decoration: none;
   &:hover {
     background-color: ${darken(0.1, "#673AB7")};

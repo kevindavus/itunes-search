@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
 const Cover = styled.div`
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  text-align: center;
+  align-content: flex-end;
   background-color: #212529;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-top: -32px;
   background-image: url(${props => props.img});
-  background-size: 50%;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
   display: flex;
   flex-flow: column nowrap;
+  height: 500px;
   justify-content: flex-end;
-  align-content: flex-end;
-  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: -32px;
+  object-fit: cover;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
 `;
 
 export default Cover;
