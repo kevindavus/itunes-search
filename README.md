@@ -13,3 +13,6 @@ Yarn: `yarn start`
 Npm: `npm run build`
 
 Yarn: `yarn run build`
+
+**TODO**  
+Make mobile friendly
