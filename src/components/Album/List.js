@@ -1,21 +1,41 @@
 import React from "react";
-import { Image, List } from "semantic-ui-react";
 import SongLI from "./SongLI";
+import TrackNumber from "./TrackNumber";
+import SongName from "./SongName";
+import SongTime from "./SongTime";
 
-const SongList = props => (
-  <List divided relaxed>
-    {props.songs.map(song => (
-      <List.Item key={`${song.song} - ${song.time}`}>
-        <List.Content>
-          <SongLI>
-            <a href={song.url}>
-              <List.Header> {`${song.song} - ${song.time}`} </List.Header>
-            </a>
-          </SongLI>
-        </List.Content>
-      </List.Item>
-    ))}
-  </List>
-);
+const SongList = props => {
+  const songs = props.songs.sort((a, b) => {
+    let result = 0;
+    if (a.id < b.id) {
+      return -1;
+    } else if (a.id > b.id) {
+      return 1;
+    } else {
+      if (a.number < b.number) {
+        return -1;
+      } else {
+        return 1;
+      }
+    }
+  });
+
+  return (
+    <div>
+      <SongLI href="" key="titles">
+        <TrackNumber />
+        <SongName>TITLE</SongName>
+        <SongTime>TIME</SongTime>
+      </SongLI>
+      {songs.map(song => (
+        <SongLI href={song.url} key={`${song.song} - ${song.time}`}>
+          <TrackNumber> {song.number}</TrackNumber>
+          <SongName>{song.song}</SongName>
+          <SongTime>{song.time}</SongTime>
+        </SongLI>
+      ))}
+    </div>
+  );
+};
 
 export default SongList;

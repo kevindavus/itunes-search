@@ -13,21 +13,31 @@ class Landing extends Component {
     };
 
     this.changeTerm = this.changeTerm.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   changeTerm(e) {
     this.setState({ artist: e.target.value });
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.history.push(`/Artist/${this.state.artist}`);
+  }
+
   render() {
     return (
-      <Wrapper>
-        <Header>iTunes Searchitron 9000</Header>
-        <Container>
-          <Input placeholder="Jack Johnson" onChange={this.changeTerm} />
-          <Button to={`Artist/${this.state.artist}`}> Search </Button>
-        </Container>
-      </Wrapper>
+      <div>
+        <Header />
+        <Wrapper>
+          <Container>
+            <form onSubmit={this.handleSubmit}>
+              <Input placeholder="Jack Johnson" onChange={this.changeTerm} />
+              <Button type="submit"> Search </Button>
+            </form>
+          </Container>
+        </Wrapper>
+      </div>
     );
   }
 }

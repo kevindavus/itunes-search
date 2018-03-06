@@ -38,10 +38,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <Wrapper>
+      <div>
         <Header artist={this.props.match.params.artist} />
-        <Grid images={this.state.images} />
-      </Wrapper>
+        <Wrapper>
+          <Grid images={this.state.images} />
+        </Wrapper>
+      </div>
     );
   }
 }

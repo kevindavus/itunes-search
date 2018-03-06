@@ -10,6 +10,7 @@ const Routes = () => (
       <Route exact path="/" component={Landing} />
       <Route exact path="/Artist/:artist" component={Gallery} />
       <Route exact path="/album/:artist/:album" component={Album} />
+      <Route component={Landing} />
     </Switch>
   </div>
 );

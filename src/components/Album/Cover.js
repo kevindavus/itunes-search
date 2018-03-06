@@ -6,17 +6,19 @@ const Cover = styled.div`
   background-image: url(${props => props.img});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 80%;
   display: flex;
   flex-flow: column nowrap;
-  height: 500px;
+  height: 38em;
   justify-content: flex-end;
   margin: 0 auto;
-  margin-top: -32px;
   object-fit: cover;
   overflow: hidden;
   text-align: center;
-  width: 100%;
+  width: 80%;
+  margin-top: 1em;
+  margin-left: -20px;
+  box-shadow: 3px 3px 2px 0px rgba(68, 68, 68, 0.4);
 `;
 
 export default Cover;
