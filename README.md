@@ -1,6 +1,6 @@
 # _Itunes Searchitron 9000_
 
-1.  Clone the repo to your machine
+1.  **Clone the repo to your machine**
 
 `git clone https://github.com/kevindavus/itunes-search.git`
 
@@ -10,7 +10,7 @@ Npm: `npm start`
 
 Yarn: `yarn start`
 
-**The server will be up on the port 8080 by default `localhost:8080`**
+**_The server will be up on the port 8080 by default `localhost:8080`_**
 
 3.  **for production**
 
