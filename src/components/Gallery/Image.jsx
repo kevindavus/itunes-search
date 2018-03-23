@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
 
-const Thumbnail = styled("img")`
+const Thumbnail = styled('img')`
   box-shadow: 3px 3px 2px 0px rgba(68,68,68, 0.4);
   box-sizing: border-box;
   height: 200px;

@@ -1,23 +1,20 @@
-import React from "react";
-import SongLI from "./SongLI";
-import TrackNumber from "./TrackNumber";
-import SongName from "./SongName";
-import SongTime from "./SongTime";
+import React from 'react';
+import SongLI from './SongLI';
+import TrackNumber from './TrackNumber';
+import SongName from './SongName';
+import SongTime from './SongTime';
 
-const SongList = props => {
+const SongList = (props) => {
   const songs = props.songs.sort((a, b) => {
-    let result = 0;
     if (a.id < b.id) {
       return -1;
     } else if (a.id > b.id) {
       return 1;
-    } else {
-      if (a.number < b.number) {
-        return -1;
-      } else {
-        return 1;
-      }
     }
+    if (a.number < b.number) {
+      return -1;
+    }
+    return 1;
   });
 
   return (

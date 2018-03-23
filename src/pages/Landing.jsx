@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import Wrapper from "../components/shared/PageWrapper";
-import Header from "../components/shared/PageHeader";
-import Button from "../components/Landing/Button";
-import Container from "../components/Landing/Container";
-import Input from "../components/Landing/Input";
+import React, { Component } from 'react';
+import Wrapper from '../components/shared/PageWrapper';
+import Header from '../components/shared/PageHeader';
+import Button from '../components/Landing/Button';
+import Container from '../components/Landing/Container';
+import Input from '../components/Landing/Input';
 
 class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      artist: ""
+      artist: '',
     };
 
     this.changeTerm = this.changeTerm.bind(this);

@@ -1,8 +1,8 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Landing from "./pages/Landing";
-import Gallery from "./pages/Gallery";
-import Album from "./pages/Album";
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Landing from './pages/Landing';
+import Gallery from './pages/Gallery';
+import Album from './pages/Album';
 
 const Routes = () => (
   <div>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Cover = styled.div`
   align-content: flex-end;
@@ -19,6 +19,12 @@ const Cover = styled.div`
   margin-top: 1em;
   margin-left: -20px;
   box-shadow: 3px 3px 2px 0px rgba(68, 68, 68, 0.4);
+
+  @media (max-width: 1200px) {
+    background-size: 100%;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
 `;
 
 export default Cover;

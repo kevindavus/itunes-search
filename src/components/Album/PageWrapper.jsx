@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   max-width: 1200px;
@@ -8,6 +8,11 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 20px;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-flow: column nowrap;
+  }
 `;
 
 export default Wrapper;

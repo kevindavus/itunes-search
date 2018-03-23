@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const SongTime = styled.div`
   font-weight: 200;
