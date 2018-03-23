@@ -28,4 +28,5 @@ Then take a look at what is on the album
 ![song list](albumdetail.png)
 
 **TODO**  
-Make mobile friendly
+Testing
+Better mobile experience
