@@ -49,8 +49,9 @@ class App extends React.Component {
       <div>
         <Header />
         <Wrapper>
-          <Cover img={this.state.albumCover}>
+          <Cover>
             <Title>{`${params.artist} - ${params.album}`}</Title>
+            <img src={this.state.albumCover} alt={`${params.artist} - ${params.album}`} />
           </Cover>
           <SongList songs={this.state.songs} />
         </Wrapper>

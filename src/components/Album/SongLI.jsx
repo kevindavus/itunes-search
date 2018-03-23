@@ -7,6 +7,10 @@ const SongLI = styled.a`
   display: grid;
   grid-template-columns: 30% 60% 10%;
   border-bottom: 1px solid #e9ecef;
+
+  @media (max-width: 420px) {
+    grid-template-columns: 80% 20%;
+  }
 `;
 
 export default SongLI;
